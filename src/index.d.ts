@@ -1,11 +1,11 @@
 declare class Shime {
     public constructor(
         parent: GuiObject,
-        time = 1,
-        style = Enum.EasingStyle.Linear,
-        repeatCount = -1,
-        reverses = false,
-        delayTime = 0,
+        time?: number,
+        style?: Enum.EasingStyle,
+        repeatCount?: number,
+        reverses?: boolean,
+        delayTime?: number,
     );
 
     public GetFrame(): Frame;

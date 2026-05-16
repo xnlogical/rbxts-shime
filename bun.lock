@@ -1,0 +1,21 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@rbxts/shime",
+      "devDependencies": {
+        "@rbxts/compiler-types": "latest",
+        "@rbxts/types": "latest",
+        "typescript": "^5.5.3",
+      },
+    },
+  },
+  "packages": {
+    "@rbxts/compiler-types": ["@rbxts/compiler-types@3.0.0-types.0", "", {}, "sha512-VGOHJPoL7+56NTatMGqQj3K7xWuzEV+aP4QD5vZiHu+bcff3kiTmtoadaF6NkJrmwfFAvbsd4Dg764ZjWNceag=="],
+
+    "@rbxts/types": ["@rbxts/types@1.0.920", "", {}, "sha512-rzGBM+AUE2ZTkaWd4Pc0/2i8L6+pMkEvmHyPjXNu0x0YNEYD4Bh9yjOw6QEZHcg50sCmrqgFniYRx6IjWT/x1g=="],
+
+    "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+  }
+}

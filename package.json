@@ -1,0 +1,25 @@
+{
+    "name": "@rbxts/shime",
+    "version": "0.1.0",
+    "description": "A port of Ryan Luu's Shime library",
+    "author": "xnlogical",
+    "license": "MIT",
+    "main": "src/init.luau",
+    "types": "src/index.d.ts",
+    "files": [
+        "src/init.luau",
+        "src/index.d.ts"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xnlogical/rbxts-shime.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@rbxts/compiler-types": "latest",
+        "@rbxts/types": "latest",
+        "typescript": "^5.5.3"
+    }
+}

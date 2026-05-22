@@ -1,6 +1,6 @@
 {
     "name": "@rbxts/shime",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A port of Ryan Luu's Shime library",
     "author": "xnlogical",
     "license": "MIT",

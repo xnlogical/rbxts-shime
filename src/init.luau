@@ -52,11 +52,14 @@ local function createShimmer(parent: GuiObject): Frame
 
 	-- Update the corner radius of the frame when the UICorner or Parent changes
 	local function updateCornerRadius()
-		if frame.Parent:FindFirstChildOfClass("UICorner") then
-			local parentCorner: UICorner = frame.Parent:FindFirstChildOfClass("UICorner")
+		if not frame.Parent then
+			return
+		end
 
+		const parentCorner = frame.Parent:FindFirstChildOfClass("UICorner")
+		if parentCorner then
 			-- Create a new UICorner for the frame
-			local corner: UICorner = Instance.new("UICorner")
+			local corner = Instance.new("UICorner")
 			corner.CornerRadius = parentCorner.CornerRadius
 			corner.Parent = frame
 

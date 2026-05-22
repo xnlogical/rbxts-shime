@@ -69,9 +69,12 @@ local function createShimmer(parent: GuiObject): Frame
 
 	-- Update the size of the frame when the UIPadding changes
 	local function updatePaddingOffset()
-		if frame.Parent:FindFirstChildOfClass("UIPadding") then
-			local padding: UIPadding = frame.Parent:FindFirstChildOfClass("UIPadding")
+		if not frame.Parent then
+			return
+		end
 
+		const padding = frame.Parent:FindFirstChildOfClass("UIPadding")
+		if padding then
 			local widthScale: number = padding.PaddingLeft.Scale + padding.PaddingRight.Scale
 			local heightScale: number = padding.PaddingTop.Scale + padding.PaddingBottom.Scale
 			local widthOffset: number = padding.PaddingLeft.Offset + padding.PaddingRight.Offset
